@@ -1,0 +1,154 @@
+html{
+  font-family: helvetica, sans-serif;
+  color: gray;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 24px;
+}
+
+.navbar-mobile{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li{
+  list-style: none;
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 480px){
+  .info-img{
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  .info1{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px){
+  .info-img-mobile{
+    display: none;
+  }
+  .navbar-mobile{
+    display: none;
+  }
+}
+
+.banner{
+  display: flex;
+  background-color: lightgray;
+}
+
+.container-left{
+  width: 60%;
+  height: auto;
+}
+
+.banner-text{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: 32px 24px;
+  justify-content: center;
+}
+
+.banner-text, h1 h4 button{
+  padding-left: 24px;
+}
+
+.button{
+  background-color: darkgray;
+  color: gray;
+}
+
+.big-image{
+  height: auto;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.container-right{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 32px 24px;
+  justify-content: center;
+}
+
+.information{
+  display: flex;
+}
+
+.info-item{
+  display: flex;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+.info-item div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-img{
+  width: 35%;
+  height: 35%;
+}
+
+.info1 h1, p, span, h3{
+  padding-left: 24px;
+}
+
+.course{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course h1{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.courses{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-desc{
+  width: 350px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.course-desc img{
+  width: 100%;
+  height: auto;
+}
+
+.thesis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

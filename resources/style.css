@@ -7,6 +7,10 @@ h1{
   font-weight: bold;
 }
 
+a{
+  color: gray;
+}
+
 .logo{
   position: absolute;
   top: 10px;
@@ -29,6 +33,15 @@ nav ul li{
 }
 
 @media only screen and (max-width: 480px){
+  .banner{
+    flex-direction: column;
+  }
+  .banner .container-left{
+    width: 100%;
+  }
+  .banner .container-right{
+    width: 100%;
+  }
   .info-img{
     display: none;
   }
@@ -53,6 +66,15 @@ nav ul li{
     width: 100%;
     height: auto;
   }
+  .course-desc{
+    display: none;
+  }
+  .course{
+    width: 100%;
+  }
+  .courses-mobile{
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 480px){
@@ -60,6 +82,9 @@ nav ul li{
     display: none;
   }
   .navbar-mobile{
+    display: none;
+  }
+  .courses-mobile{
     display: none;
   }
 }
@@ -90,6 +115,7 @@ nav ul li{
 .button{
   background-color: darkgray;
   color: gray;
+  height: 32px;
 }
 
 .big-image{
@@ -147,6 +173,19 @@ nav ul li{
 .course h1{
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+.mobile-course{
+  background-color: lightgray;
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.mobile-course h3{
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 24px;
 }
 
 .courses{

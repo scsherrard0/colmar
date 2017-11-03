@@ -75,6 +75,22 @@ nav ul li{
   .courses-mobile{
     width: 100%;
   }
+  .thesis-content .container-left h3, p{
+    display: none;
+  }
+  .thesis-content .container-left{
+    width: 100%;
+  }
+  .thesis-content .container-left .big-image{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .thesis-content .container-right{
+    display: none;
+  }
+  .nav-footer{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 480px){
@@ -236,4 +252,12 @@ nav ul li{
 .thesis-desc{
   display: flex;
   flex-direction: column;
+}
+
+footer{
+  padding: 32px 0;
+}
+
+.copyright{
+  margin-left: 24px;
 }

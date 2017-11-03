@@ -32,11 +32,26 @@ nav ul li{
   .info-img{
     display: none;
   }
+  .information .container-left{
+    display: none;
+  }
+  .information .container-right{
+    width: 100%;
+  }
   .navbar{
     display: none;
   }
   .info1{
     display: none;
+  }
+  .info-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-img-mobile{
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -100,14 +115,18 @@ nav ul li{
 
 .info-item{
   display: flex;
-  padding-left: 24px;
-  padding-bottom: 24px;
+  margin-left: 24px;
+  padding: 24px;
 }
 
 .info-item div{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.container-right .info-item:last-child{
+  background-color: lightgray;
 }
 
 .info-img{
@@ -151,4 +170,31 @@ nav ul li{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.thesis-content{
+  display: flex;
+}
+
+.thesis-content .container-right{
+  justify-content: flex-start;
+}
+
+.container-right .thesis-side:first-child{
+  background-color: lightgray;
+}
+
+.thesis-side{
+  display: flex;
+  margin-left: 24px;
+}
+
+.thesis-side img{
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
+.thesis-desc{
+  display: flex;
+  flex-direction: column;
 }
